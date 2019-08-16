@@ -1,0 +1,17 @@
+title: .gitignore
+tagline: A brand new course on Learning Lab
+description: Tudo que você precisa saber para ignorar arquivos no Git do jeito certo.
+template:
+  repo: .gitignore-template
+  name: .gitignore
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
